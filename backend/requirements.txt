@@ -8,12 +8,17 @@ httpx==0.28.1
 # --- Agent orchestration ---
 langgraph==0.2.60
 
-# --- Retrieval (hybrid: BM25 always-on + optional dense) ---
+# --- Retrieval (BM25 always-on) ---
 rank-bm25==0.2.2
-# Dense retrieval is OPTIONAL. If these install/download, the retriever
-# upgrades to hybrid automatically; if not, it degrades gracefully to BM25.
-faiss-cpu==1.9.0.post1
-sentence-transformers==3.3.1
+numpy>=1.26,<3            # used by the retriever for dense scoring math
 
 # --- Corpus ingestion (PDF support is optional) ---
 pypdf==5.1.0
+
+# --- OPTIONAL dense retrieval --------------------------------------------------
+# Big (torch + faiss, ~1 GB) and NOT required: the retriever auto-upgrades to
+# hybrid if these are present and degrades to BM25 if not. Left OUT of the
+# default install so free-tier hosts (Render) build fast and stay small.
+# To enable dense retrieval locally, uncomment these and set ASHA_USE_DENSE=1:
+# faiss-cpu==1.9.0.post1
+# sentence-transformers==3.3.1
