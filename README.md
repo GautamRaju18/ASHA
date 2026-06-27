@@ -8,7 +8,7 @@ official health protocols** to return:
 - a **color-coded triage level** (4 fixed categories),
 - an explicit **REFER** flag for danger cases (with a hard danger-sign override),
 - action-oriented **next steps** within ASHA scope,
-- the **nearest appropriate health facility** for the worker's location,
+- the **nearest appropriate health facility** for the worker's exact location,
 - **citations** to the source protocol and a disclaimer on every result.
 
 It is a standard website served over HTTP(S) — open it in any phone or desktop
