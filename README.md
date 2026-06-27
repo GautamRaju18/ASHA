@@ -1,6 +1,6 @@
 # 🩺 ASHA Sahayak — Rural Health-Worker Triage Web App
 
-A responsive **web application** for ASHA / ANM / frontline rural health workers in
+A responsive **web app** for ASHA / ANM / frontline rural health workers in
 India. A worker signs in (location captured with consent), describes a patient's
 symptoms in plain or regional language, and the agent **reasons over retrieved
 official health protocols** to return:
@@ -70,7 +70,7 @@ from the corpus.
 
 ## Quick start
 
-**Prerequisites:** Python 3.10+, Node 18+, and [Ollama](https://ollama.com) running.
+**Prerequisites:** Python 3.10+, Node 18+, and [Ollama] running.
 
 ```powershell
 # 1. Get the local model (free)
