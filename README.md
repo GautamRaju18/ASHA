@@ -219,5 +219,5 @@ frontend/
   src/pages/           # Login, Triage, Result, Facilities, History
   src/components/TriageCard.jsx
   src/App.jsx, api.js, styles.css
-run.ps1
+then run.ps1
 ```
