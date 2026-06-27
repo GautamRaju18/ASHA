@@ -1,0 +1,19 @@
+# --- Core API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-multipart==0.0.20
+httpx==0.28.1
+
+# --- Agent orchestration ---
+langgraph==0.2.60
+
+# --- Retrieval (hybrid: BM25 always-on + optional dense) ---
+rank-bm25==0.2.2
+# Dense retrieval is OPTIONAL. If these install/download, the retriever
+# upgrades to hybrid automatically; if not, it degrades gracefully to BM25.
+faiss-cpu==1.9.0.post1
+sentence-transformers==3.3.1
+
+# --- Corpus ingestion (PDF support is optional) ---
+pypdf==5.1.0
